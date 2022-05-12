@@ -1,4 +1,6 @@
 import React from 'react'
+import "../App.css";
+import "./Video.css";
 import { Button } from './Button'
 
 function Video() {
@@ -8,10 +10,23 @@ function Video() {
       <h1>Come fly with us.</h1>
       <p>For quick cheap trips and more!</p>
       <div className='hero-btns'>
-
+        <Button
+          className='btns'
+          buttonStyle='btn--outline'
+          buttonSize='btn--large'
+          >
+            BOOK NOW
+          </Button>
+          <Button
+          className='btns'
+          buttonStyle='btn--primary'
+          buttonSize='btn--large'
+          >
+            DEEZ NUTS
+          </Button>
       </div>
     </div>
   )
 }
 
-export default Video
+export default Video;
