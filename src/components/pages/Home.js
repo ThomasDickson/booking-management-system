@@ -8,6 +8,6 @@ function Home() {
           <Video />
         </>
     );
-}
+};
 
 export default Home;
