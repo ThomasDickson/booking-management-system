@@ -8,7 +8,7 @@ function App() {
     <Router>
       <NavigationBar/>
       <Routes>
-        <Route path="/" exact />
+        <Route path="/" exact/>
       </Routes>
     </Router>
     </> 
