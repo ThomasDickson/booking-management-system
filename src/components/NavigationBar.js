@@ -1,18 +1,18 @@
+import { click } from '@testing-library/user-event/dist/click';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function NavigationBar() {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
   return (
     <>
       <nav className='navigationbar'>
         <div className='navigationbar-container'>
-          <Link to="/" className='navigationbar-logo'>
-            FlyDreamAir 
-          </Link>
-          <div className='menu-icon'>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          </div>    
+          <img src="/favicon.jpg" className='navigationbar-logo'/>
         </div>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}></ul>
       </nav>
     </>
   )
