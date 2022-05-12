@@ -1,5 +1,8 @@
 import React from 'react'
-import './Video.css';
+import "../App.css";
+import "./Video.css";
+import { Button } from './Button';
+
 function Video() {
   return (
     <div className='video-container'>
@@ -8,9 +11,23 @@ function Video() {
       <h2></h2>
       <p>For quick cheap trips and more!</p>
       <div className='hero-btns'>
-
+        <Button
+          className='btns'
+          buttonStyle='btn--outline'
+          buttonSize='btn--large'
+          >
+            BOOK NOW
+          </Button>
+          <Button
+          className='btns'
+          buttonStyle='btn--primary'
+          buttonSize='btn--large'
+          >
+            DEEZ NUTS
+          </Button>
       </div>
     </div>
   )
 }
-export default Video
+
+export default Video;
