@@ -5,12 +5,7 @@ import { Button } from './Button';
 
 function Video() {
   return (
-    <div className='video-container'>
-      <video src="/planevideo.mp4" autoPlay loop muted/>
-      <h1>Come fly with us.</h1>
-      <h2></h2>
-      <p>For quick cheap trips and more!</p>
-      <div className='hero-btns'>
+    <div className='hero-btns'>
         <Button
           className='btns'
           buttonStyle='btn--outline'
@@ -25,6 +20,12 @@ function Video() {
           >
             DEEZ NUTS
           </Button>
+    <div className='video-container'>
+      <video src="/planevideo.mp4" autoPlay loop muted/>
+      <h1>Come fly with us.</h1>
+      <h2></h2>
+      <p>For quick cheap trips and more!</p>
+      
       </div>
     </div>
   )
