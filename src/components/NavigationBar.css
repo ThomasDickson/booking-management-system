@@ -1,0 +1,46 @@
+
+
+.navbar-logo {
+    color: #2796FD !important;
+    font-weight: 700;
+    font-size: 24px;
+    position: absolute;
+    left: 20%;
+    transition: transform .3s, text-shadow .3s;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.05);
+    text-shadow: 0 2px 1px rgba(161, 161, 161, 0.2); 
+}
+
+.navbar-logo:active {
+    transform: scale(1);
+}
+
+.navbar-booking {
+    color: #2796FD !important;
+    text-transform: none !important;
+    border-radius: 5px !important;
+    right: 40% ;
+    position: absolute !important;
+}
+
+.navbar-about {
+    color: #2796FD !important;
+    text-transform: none !important;
+    border-radius: 5px !important;
+    right: 29%;
+    position: absolute !important;
+}
+
+.navbar-account  {
+    color: #2796FD !important;
+    position: absolute !important;
+    right: 20%;
+    transition: transform .2s !important;
+}
+
+.navbar-account:hover {
+    transform: scale(1.05);
+}
