@@ -1,5 +1,3 @@
-
-
 .navbar-logo {
     color: #2796FD !important;
     font-weight: 700;
@@ -22,7 +20,7 @@
     color: #2796FD !important;
     text-transform: none !important;
     border-radius: 5px !important;
-    right: 40% ;
+    right: 40%;
     position: absolute !important;
 }
 
