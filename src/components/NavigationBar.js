@@ -1,5 +1,6 @@
 import React from 'react'
 import './NavigationBar.css';
+import '../App.css';
 import { AppBar, Button, IconButton, Toolbar} from "@mui/material";
 import { AccountCircle } from "@mui/icons-material";
 import { Link } from 'react-router-dom';

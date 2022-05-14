@@ -18,6 +18,8 @@
 
 .navbar-booking {
     color: #2796FD !important;
+    font-size: medium !important;
+    font-weight: 600 !important;
     text-transform: none !important;
     border-radius: 5px !important;
     right: 40%;
@@ -26,9 +28,11 @@
 
 .navbar-about {
     color: #2796FD !important;
+    font-size: medium !important;
+    font-weight: 600 !important;
     text-transform: none !important;
     border-radius: 5px !important;
-    right: 29%;
+    right: 30%;
     position: absolute !important;
 }
 

@@ -13,7 +13,8 @@ function Video() {
       alignItems="center"
       marginTop="100px"
       width={'100%'}
-      height={'300px'}>
+      height={'300px'}
+    >
       <video src="/planevideo.mp4" autoPlay loop muted/> 
 
       <Box className="text-container"
@@ -41,8 +42,7 @@ function Video() {
             Book Now
           </Button>
         </div>
-      </Box>
-             
+      </Box>       
     </Box>
   )
 }

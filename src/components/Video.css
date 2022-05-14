@@ -1,6 +1,7 @@
 video {
   position: absolute;
   z-index: -1;
+  transform: scale(1.1);
   filter: brightness(0.7) blur(10px);
 }
 
