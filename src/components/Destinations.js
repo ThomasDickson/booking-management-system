@@ -92,7 +92,7 @@ function Destinations() {
                   Borger
                 </Typography>
                 <Typography color="#2796FD" variant="body2">
-                  <b>Flights from $689</b>
+                  <b>Flights from $1247</b>
                 </Typography>
               </CardContent>
             </Card>
@@ -102,18 +102,18 @@ function Destinations() {
               <CardMedia
                 component="img"
                 height="250"
-                image="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2013/4/24/1366809152661/Will.i.am-007.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=f076a32937ada9d7c39efdf9296a56b4"
-                alt="kangaroo on australian beach"
+                image="https://cdn.londonandpartners.com/-/media/images/london/visit/things-to-do/sightseeing/london-attractions/big-ben/big-ben-houses-of-parliament-shutterstock640x360jpg.jpg?h=360&w=640&la=en&hash=AE5224D40454F09CB83D0CE7E8DB02619EEB2AB7"
+                alt="UK"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  America
+                  London, England
                 </Typography>
                 <Typography variant="body1">
                   Borger
                 </Typography>
                 <Typography color="#2796FD" variant="body2">
-                  <b>Flights from $689</b>
+                  <b>Flights from $954</b>
                 </Typography>
               </CardContent>
             </Card>
@@ -123,18 +123,18 @@ function Destinations() {
               <CardMedia
                 component="img"
                 height="250"
-                image="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2013/4/24/1366809152661/Will.i.am-007.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=f076a32937ada9d7c39efdf9296a56b4"
-                alt="kangaroo on australian beach"
+                image="https://cdn.cheapoguides.com/wp-content/uploads/sites/3/2019/03/Osaka-castle-cherry-blosson-iStock-512491222.jpg"
+                alt="osaka"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  America
+                  Osaka, Japan
                 </Typography>
                 <Typography variant="body1">
-                  Borger
+                  Take in Japan's modern cities and culture.
                 </Typography>
                 <Typography color="#2796FD" variant="body2">
-                  <b>Flights from $689</b>
+                  <b>Flights from $1142</b>
                 </Typography>
               </CardContent>
             </Card>
