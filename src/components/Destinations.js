@@ -24,7 +24,7 @@ function Destinations() {
         <Grid container 
           spacing={4}
         >
-          <Grid item xs={12}>
+          <Grid item xs={12} >
             <Typography variant="h4" color="#2796FD">
               <b>Choose your adventure. </b>
             </Typography>
