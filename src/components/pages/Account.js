@@ -1,7 +1,7 @@
 import React from 'react'
 import NavigationBar from '../NavigationBar'
 
-function SignIn() {
+function Account() {
   return (
     <div>
         <NavigationBar />
@@ -9,4 +9,4 @@ function SignIn() {
   )
 }
 
-export default SignIn
+export default Account
