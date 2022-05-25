@@ -53,7 +53,7 @@ function Account() {
                       
                         <CardContent>
                           <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}}>
-                            UserName:
+                            Email:
                             <br/> 
                             <input type="text" name="user" />
                           </Typography>
