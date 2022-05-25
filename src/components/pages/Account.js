@@ -64,6 +64,9 @@ function Account() {
                             <input type="password" name="password" />
                           </Typography>
                           <br/>
+                          <Typography  as={Link} to="/" style={{fontWeight: "bold"}}>
+                            Click here to make login
+                          </Typography>
                         </CardContent>
                      
                     </Grid>
