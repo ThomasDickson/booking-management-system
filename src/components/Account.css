@@ -1,8 +1,0 @@
-h4 {
-  position: center;
-  z-index: -1;
-  transform: scale(1.1);
-  filter: brightness(0.7) blur(10px);
-  font-weight: 700;
-  font-size: 78px;
-}

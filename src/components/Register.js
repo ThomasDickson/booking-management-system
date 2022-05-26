@@ -1,24 +1,35 @@
-import React from 'react'
-import NavigationBar from '../NavigationBar'
+import React, { useState } from 'react'
+import { auth } from '../firebase-config'
+import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { Link } from 'react-router-dom'
 import { Box,
   Button, 
   Card, 
   CardContent, 
   Grid,
-  Typography } from '@mui/material'
+  Typography,
+  TextField } from '@mui/material'
 
-function MakeAcc() {
+function Register() {
+
+  const [registerEmail, setRegisterEmail] = useState("");
+  const [registerPassword, setRegisterPassword] = useState("");
+
+  const register = async () => {
+    try {
+      const user = await createUserWithEmailAndPassword(auth, registerEmail, registerPassword);
+      console.log(user);
+    } catch (error) {
+      console.log(error.message);
+    }
+    
+  };
   return (
     <div>
-      
-        <NavigationBar />
-        
-      <Box
+     <Box
       component="div"
       display="flex"
       marginTop="150px"
-      textAlign={"center"}
       justifyContent="center"
       backgroundColor="#fff"
       >
@@ -26,14 +37,14 @@ function MakeAcc() {
         marginTop="30px"
         display="flex"
         justifyContent="center"
-        width={'0%'}
+        width={'30%'}
         >
 
     
         <Grid container>
           <Grid item xs={12} >
-            <Typography variant="h4" color="#2796FD">
-              <b>Make New Account </b>
+            <Typography textAlign={"center"} variant="h4" color="#2796FD">
+              <b>Register a New Account </b>
             </Typography>
 
             <br /> <br />
@@ -45,14 +56,14 @@ function MakeAcc() {
                 <Grid container
                   spacing={2}>
                     <Grid item xs={12}>
-                      <Typography variant="h6" color="#2796FD" >
-                        Please enter your 
-                        <br />details
+                      <Typography textAlign={"center"} variant="h6" color="#2796FD" >
+                        Please enter the following details:
                       </Typography>
                     </Grid>
                     <Grid item xs={6}>
                       
                         <CardContent>
+                        {/*
                         <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}} required>
                             First Name:
                             <br/> 
@@ -103,24 +114,39 @@ function MakeAcc() {
                         </select>
                         </Typography>
                         <br/>
-                          <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}} required>
+                        */}
+                          <Typography textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}}>
                             Email:
                             <br/> 
-                            <input type="text" name="user" />
                           </Typography>
+                          <TextField 
+                            required
+                            placeholder="johncitizen@example.com"
+                            id="outlined-required"
+                            onChange={(event) => {
+                                setRegisterEmail(event.target.value)
+                            }} 
+                          />
                           <Typography textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}} required> 
                           <br/>
                             Password:
                             <br/>
                             
-                            <input type="password" name="password" />
+                            <TextField 
+                              required
+                              placeholder="At least 6 characters"
+                              type="password"
+                              id="outlined-required"
+                              onChange={(event) => {
+                                setRegisterPassword(event.target.value)
+                              }} 
+                            />
                           </Typography>
                           <br/>
-                          <Typography  as={Link} to="/Account" style={{fontWeight: "bold"}} type="submit" required>
-                            Click here if you have login
+                          <Typography as={Link} to="/account/login" style={{fontWeight: "bold"}} type="submit" required>
+                            Already have an account? Click here to log in!
                           </Typography>
                         </CardContent>
-                     
                     </Grid>
                     <Grid item xs={4}></Grid>
                     <Grid item xs={4}></Grid>
@@ -128,7 +154,12 @@ function MakeAcc() {
                         display="flex"
                         justifyContent="center"
                     >
-                      <Button size="large" variant="contained" style={{backgroundColor:"#2796FD"}} display = "flex" required>
+                      <Button 
+                        component={Link}
+                        to="/"
+                        variant="contained" 
+                        style={{backgroundColor:"#2796FD"}} 
+                        onClick={register}>
                         Create Account
                       </Button>
                     </Grid>
@@ -143,4 +174,4 @@ function MakeAcc() {
   )
 }
 
-export default MakeAcc
+export default Register
