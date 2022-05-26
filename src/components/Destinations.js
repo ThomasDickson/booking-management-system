@@ -22,7 +22,7 @@ function Destinations() {
         width={'60%'}
         >
         <Grid container 
-          spacing={4}
+          spacing={3}
         >
           <Grid item xs={12} >
             <Typography variant="h4" color="#2796FD">
@@ -133,6 +133,7 @@ function Destinations() {
                 <Typography variant="body1">
                   Take in Japan's modern cities and culture. With a trip to Osaka flying FlyDreamAir.
                 </Typography>
+                <br />
                 <Typography color="#2796FD" variant="body2">
                   <b>Flights from $1142</b>
                 </Typography>
