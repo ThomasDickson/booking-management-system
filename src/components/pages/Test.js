@@ -116,7 +116,7 @@ function Test() {
                             <input type="password" name="password" />
                           </Typography>
                           <br/>
-                          <Typography  as={Link} to="/" style={{fontWeight: "bold"}} type="submit" required>
+                          <Typography  as={Link} to="/Account" style={{fontWeight: "bold"}} type="submit" required>
                             Click here if you have login
                           </Typography>
                         </CardContent>
