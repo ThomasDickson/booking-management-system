@@ -26,7 +26,7 @@ function MakeAcc() {
         marginTop="30px"
         display="flex"
         justifyContent="center"
-        width={'30%'}
+        width={'0%'}
         >
 
     
