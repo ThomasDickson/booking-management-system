@@ -6,7 +6,7 @@ import Destinations from '../Destinations'
 function Home() {
   return (
     <Stack
-      direction="column">
+      direction="column" >
       <Video />
       <Destinations />
     </Stack> 

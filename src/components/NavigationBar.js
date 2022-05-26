@@ -19,15 +19,29 @@ function NavigationBar() {
             component={Link} 
             to="/booking" 
           >
-            Bookings
+              Bookings
           </Button>
           <Button
             className="navbar-about" 
             component={Link} 
             to="/about" 
           >
+
+    
+
             About
           </Button>
+
+
+          <Button
+            className="navbar-test" 
+            component={Link} 
+            to="/test" 
+          >
+            test
+          </Button>
+
+
           <IconButton
             className="navbar-account"
             component={Link}
