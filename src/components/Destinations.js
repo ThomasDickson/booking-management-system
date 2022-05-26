@@ -89,7 +89,7 @@ function Destinations() {
                   New York, U.S.A
                 </Typography>
                 <Typography variant="body1">
-                  Borger
+                  New York subways, rats, pizza it has it all this life style could be all yours for the low price of $1247.
                 </Typography>
                 <Typography color="#2796FD" variant="body2">
                   <b>Flights from $1247</b>
@@ -110,7 +110,7 @@ function Destinations() {
                   London, England
                 </Typography>
                 <Typography variant="body1">
-                  Borger
+                  Go to England see the Big Ben maybe even have a sip of tea with a flight from FlyDreamAir!
                 </Typography>
                 <Typography color="#2796FD" variant="body2">
                   <b>Flights from $954</b>
@@ -131,7 +131,7 @@ function Destinations() {
                   Osaka, Japan
                 </Typography>
                 <Typography variant="body1">
-                  Take in Japan's modern cities and culture.
+                  Take in Japan's modern cities and culture. With a trip to Osaka flying FlyDreamAir.
                 </Typography>
                 <br />
                 <Typography color="#2796FD" variant="body2">
