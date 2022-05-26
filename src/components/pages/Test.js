@@ -29,6 +29,7 @@ function Test() {
         width={'30%'}
         >
 
+    
         <Grid container>
           <Grid item xs={12} >
             <Typography variant="h4" color="#2796FD">
@@ -52,61 +53,70 @@ function Test() {
                     <Grid item xs={6}>
                       
                         <CardContent>
-                        <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}}>
+                        <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}} required>
                             First Name:
                             <br/> 
                             <input type="text" name="fname" />
                         </Typography>
                         <br/>
-                        <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}}>
+                        <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}} required>
                             Last Name:
                             <br/> 
                             <input type="text" name="lname" />
                         </Typography>
                         <br/>
-                        <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}}>
+                        <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}} required>
                             DOB:
                             <br/> 
                             <input type="date" name="birhtday" />
                         </Typography>
                         <br/>
-                        <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}}>
+                        <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}} required>
                             Address:
                             <br/> 
                             <input type="text" name="address" />
                         </Typography>
                         <br/>
-                        <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}}>
+                        <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}} required>
                             City:
                             <br/> 
                             <input type="text" name="city" />
                         </Typography>
                         <br/>
-                        <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}}>
+                        <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}} required>
                             PostCode:
                             <br/> 
                             <input type="number" name="postcode"   min="200" max="9944"/>
                         </Typography>
                         <br/>
-                        <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}}>
-                            State:
-                            <br/> 
-                            <input type="text" name="state"  />
+                        <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}} required>
+                        <label for="states">State:</label>
+                        <br/>
+                        <select name="states" id="states">
+                          <option value="NSW">NSW</option>
+                          <option value="VIC">VIC</option>
+                          <option value="ACT">ACT</option>
+                          <option value="SA">SA</option>
+                          <option value="NT">NT</option>
+                          <option value="WA">WA</option>
+                          <option value="TAS">TAS</option>
+                        </select>
                         </Typography>
                         <br/>
-                          <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}}>
+                          <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}} required>
                             Email:
                             <br/> 
                             <input type="text" name="user" />
                           </Typography>
-                          <Typography textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}}> 
+                          <Typography textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}} required> 
                           <br/>
                             Password:
                             <br/>
+                            
                             <input type="password" name="password" />
                           </Typography>
                           <br/>
-                          <Typography  as={Link} to="/" style={{fontWeight: "bold"}}>
+                          <Typography  as={Link} to="/" style={{fontWeight: "bold"}} type="submit" required>
                             Click here if you have login
                           </Typography>
                         </CardContent>
@@ -118,7 +128,7 @@ function Test() {
                         display="flex"
                         justifyContent="center"
                     >
-                      <Button size="large" variant="contained" style={{backgroundColor:"#2796FD"}} display = "flex">
+                      <Button size="large" variant="contained" style={{backgroundColor:"#2796FD"}} display = "flex" required>
                         Create Account
                       </Button>
                     </Grid>
