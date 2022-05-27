@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { auth } from '../../firebase-config'
 import '../../App.css'
 import {Grid, Button, Box, Typography, Link, Card, CardContent} from '@mui/material'
-import { Multiselect } from 'multiselect-react-dropdown';
+import { Multiselect } from "multiselect-react-dropdown";
 import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 import Login from '../Login';
 import AccountInfo from '../AccountInfo';
@@ -12,6 +12,9 @@ import Register from '../Register'
 
 function Test() {
   return (
+    
+
+
     <Box
       component="div"
       display="flex"
@@ -51,11 +54,11 @@ function Test() {
                     </Grid>
                     <Grid item xs={4}>
 
-                        <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}} required 
+                        <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold",  fontSize: "22px"}} required 
                         >
                         <label for="Departing">Departing From:</label>
                         <br/>
-                        <select name="Departing" id="Departing" >
+                        <select name="Departing" id="Departing" style={{borderRadius: "5px", boxShadow: "0px 4px 10px", width: "380px", height: "55px",  fontSize: "24px", color: "#C2C2C2"}}>
                           
                           <option value="NZ">Auckland, New Zealand</option>
                           <option value="AA">Adelaide, Australia</option>
@@ -65,10 +68,10 @@ function Test() {
                         </select>
                         </Typography>
                         <br/>
-						<Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}} required>
+						<Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold",  fontSize: "22px"}} required>
                         <label for="Arriving">Arriving At:</label>
                         <br/>
-                        <select name="Arriving" id="Arriving">
+                        <select name="Arriving" id="Arriving" style={{borderRadius: "5px", boxShadow: "0px 4px 10px", width: "380px", height: "55px",  fontSize: "24px", color: "#C2C2C2"}}>
                           <option value="UAE">Abu Dhabi, United Arab Emirates</option>
                           <option value="AN">Amsterdam, Netherlands</option>
                           <option value="BI">Bali, Indonesia</option>
@@ -76,7 +79,8 @@ function Test() {
                           <option value="USA">California, United States</option>
                         </select>
                         </Typography>
-
+                        <br/>
+                       
 
 
                     </Grid>
@@ -99,6 +103,7 @@ function Test() {
     </Box>
   )
 }
+
 
 
 export default Test;
