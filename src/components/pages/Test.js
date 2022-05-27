@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { auth } from '../../firebase-config'
 import '../../App.css'
 import {Grid, Button, Box, Typography, Link, Card, CardContent} from '@mui/material'
+import { Multiselect } from 'multiselect-react-dropdown';
 import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 import Login from '../Login';
 import AccountInfo from '../AccountInfo';
@@ -49,34 +50,35 @@ function Test() {
                       </Typography>
                     </Grid>
                     <Grid item xs={4}>
-                      <Card>
-                        <CardContent>
-                          <Typography variant="body2">
-                            Departing from:
-                          </Typography>
-                          <br/>
-                        </CardContent>
-                      </Card>
-                    </Grid>
-                    <Grid item xs={4}>
-                      <Card>
-                      <CardContent>
-                          <Typography variant="body2">
-                            Arriving at:
-                          </Typography>
-                          <br/>
-                        </CardContent>
-                      </Card>
-                    </Grid>
-                    <Grid item xs={4}>
-                      <Card>
-                        <CardContent>
-                          <Typography variant="body2">
-                            When:
-                          </Typography>
-                          <br/>
-                        </CardContent>
-                      </Card>
+
+                        <Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}} required 
+                        >
+                        <label for="Departing">Departing From:</label>
+                        <br/>
+                        <select name="Departing" id="Departing" >
+                          
+                          <option value="NZ">Auckland, New Zealand</option>
+                          <option value="AA">Adelaide, Australia</option>
+                          <option value="BA">Bribane, Australia</option>
+                          <option value="DA">Darwin, Australia</option>
+                          <option value="HA">Hobart, Australia</option>
+                        </select>
+                        </Typography>
+                        <br/>
+						<Typography  textAlign={"left"} color="#2796FD" style={{fontWeight: "bold"}} required>
+                        <label for="Arriving">Arriving At:</label>
+                        <br/>
+                        <select name="Arriving" id="Arriving">
+                          <option value="UAE">Abu Dhabi, United Arab Emirates</option>
+                          <option value="AN">Amsterdam, Netherlands</option>
+                          <option value="BI">Bali, Indonesia</option>
+                          <option value="BS">Barcelona, Spain</option>
+                          <option value="USA">California, United States</option>
+                        </select>
+                        </Typography>
+
+
+
                     </Grid>
                     <Grid item xs={4}></Grid>
                     <Grid item xs={4}></Grid>
@@ -97,5 +99,6 @@ function Test() {
     </Box>
   )
 }
+
 
 export default Test;
