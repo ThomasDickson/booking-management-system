@@ -11,10 +11,9 @@ function App() {
     <Router>
       <NavigationBar/>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/*" element={<Home/>} />
         <Route path="/booking" element={<Booking/>} />
         <Route path="/account//*" element={<Account/>} />   
-
       </Routes>
     </Router> 
   );
