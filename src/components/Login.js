@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { auth } from '../firebase-config'
+import { signInWithEmailAndPassword } from 'firebase/auth'
 import { Box,
     Button, 
     Card, 
@@ -15,8 +16,19 @@ function Login() {
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
 
-  const login =  async () => {
+  const [user, setUser] = useState({});
 
+  const login = async () => {
+    try {
+      user = await signInWithEmailAndPassword(
+        auth,
+        loginEmail,
+        loginPassword
+      );
+      console.log(user);
+    } catch (error) {
+      console.log(error.message);
+    }
   };
 
   return (
@@ -74,7 +86,7 @@ function Login() {
                             type="password"
                             id="outlined"
                             onChange={(event) => {
-                              setLoginEmail(event.target.value)
+                              setLoginPassword(event.target.value)
                             }} 
                           />
                           <br/>
@@ -87,7 +99,7 @@ function Login() {
                         display="flex"
                         justifyContent="center"
                     >
-                      <Button size="large" variant="contained" style={{backgroundColor:"#2796FD"}}>
+                      <Button onClick={login} component={Link} to="/" size="large" variant="contained" style={{backgroundColor:"#2796FD"}}>
                         Sign In
                       </Button>
                     </Grid>
