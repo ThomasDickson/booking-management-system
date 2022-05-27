@@ -4,7 +4,6 @@ import AirplaneTicketIcon from '@mui/icons-material/AirplaneTicket';
 import "../App.css";
 import "./Video.css";
 
-
 function Video() {
 
   return (
@@ -28,13 +27,13 @@ function Video() {
         height={'300px'}
       >
         <div>
-          <span className="bigText" >Come fly with us.<br/>
+          <span className="bigText">Come fly with us.<br/>
             <span className="smallText">Your next adventure awaits you!</span>
           </span>
           <p />
           <Button 
             className="booknow-button"
-            as={Link}
+            component={Link}
             to="/booking" 
             size="large" 
             variant="outlined"

@@ -6,7 +6,11 @@ import { Box,
     Card, 
     CardContent, 
     Grid,
-    Typography } from '@mui/material'
+    Typography,
+    Select,
+    MenuItem,
+    FormControl,
+    InputLabel } from '@mui/material'
 
 function BookingSection() {
   return (
@@ -53,9 +57,13 @@ function BookingSection() {
                     <Grid item xs={4}>
                       <Card>
                         <CardContent>
-                          <Typography variant="body2">
-                            Departing from:
-                          </Typography>
+                          <InputLabel id="simple-select-label">Departing from</InputLabel>
+                          <FormControl fullWidth>
+                            <Select
+                              labelId="simple-select-label">
+                            </Select>
+                          </FormControl>
+                          
                           <br/>
                         </CardContent>
                       </Card>
