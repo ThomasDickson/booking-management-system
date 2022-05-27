@@ -30,13 +30,7 @@ function NavigationBar() {
           </Button>
 
           
-          <Button
-            className="navbar-test" 
-            component={Link} 
-            to="/test" 
-          >
-            test
-          </Button>
+          
           
 
           <IconButton
