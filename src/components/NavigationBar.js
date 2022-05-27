@@ -29,7 +29,7 @@ function NavigationBar() {
             About
           </Button>
 
-          {/*
+          
           <Button
             className="navbar-test" 
             component={Link} 
@@ -37,7 +37,7 @@ function NavigationBar() {
           >
             test
           </Button>
-          */}
+          
 
           <IconButton
             className="navbar-account"
