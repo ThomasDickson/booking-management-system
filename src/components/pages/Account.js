@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { auth } from '../../firebase-config'
 import '../../App.css'
-import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
+import { Routes, Route, Navigate} from 'react-router-dom';
 import Login from '../Login';
 import AccountInfo from '../AccountInfo';
 import Register from '../Register'
