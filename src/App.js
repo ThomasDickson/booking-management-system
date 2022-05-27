@@ -11,10 +11,9 @@ function App() {
     <Router>
       <NavigationBar/>
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/booking" element={<Booking/>} />
-        <Route path="/account//*" element={<Account/>} />   
-
+        <Route path="/booking-management-system" element={<Home/>} />
+        <Route path="/booking-management-system/booking" element={<Booking/>} />
+        <Route path="/booking-management-system/account//*" element={<Account/>} />   
       </Routes>
     </Router> 
   );
