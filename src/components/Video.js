@@ -1,8 +1,9 @@
 import React from 'react'
-import { Box, Button, Link } from '@mui/material';
+import { Box, Button, Link} from '@mui/material';
 import AirplaneTicketIcon from '@mui/icons-material/AirplaneTicket';
 import "../App.css";
 import "./Video.css";
+import video from '../assets/planevideo.mp4'
 
 function Video() {
 
@@ -12,10 +13,11 @@ function Video() {
       justifyContent="center"
       alignItems="center"
       marginTop="100px"
+      
       width={'100%'}
       height={'300px'}
     >
-      <video src="/planevideo.mp4" autoPlay loop muted/> 
+      <video src={video} autoPlay loop muted/> 
 
       <Box className="text-container"
         display="flex"
@@ -34,7 +36,7 @@ function Video() {
           <Button 
             className="booknow-button"
             component={Link}
-            to="/booking" 
+            to="booking-management-system/booking" 
             size="large" 
             variant="outlined"
             endIcon={<AirplaneTicketIcon />}

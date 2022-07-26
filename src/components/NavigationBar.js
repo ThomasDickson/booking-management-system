@@ -7,36 +7,31 @@ import { Link } from 'react-router-dom';
 
 function NavigationBar() {
   return (
-    <React.Fragment >
+    <React.Fragment>
       <AppBar sx={{background: "#fff", 
                    boxShadow: "0 1px 10px rgba(161, 161, 161, 0.2)"}}>
         <Toolbar>
-          <Link className="navbar-logo" to="/">
+          <Link className="navbar-logo" to="/booking-management-system">
               FlyDreamAir
           </Link>
           <Button 
             className="navbar-booking"
             component={Link} 
-            to="/booking" 
+            to="booking-management-system/booking" 
           >
               Bookings
           </Button>
           <Button
             className="navbar-about" 
             component={Link} 
-            to="/about" 
+            to="booking-management-system/about" 
           >
             About
           </Button>
-
-          
-          
-          
-
           <IconButton
             className="navbar-account"
             component={Link}
-            to="/account"
+            to="booking-management-system/account"
             size="small">
             <AccountCircle />
           </IconButton>
