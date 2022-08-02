@@ -6,18 +6,16 @@ import Login from '../Login';
 import AccountInfo from '../AccountInfo';
 import Register from '../Register'
 
-
-
 function Account() {
 
-  const logout =   async () => {
+  const logout = async () => {
     
   };
 
   return (
     <div>
       <Routes>
-        <Route path="/" element={auth.currentUser ? <AccountInfo /> : <Navigate to="/account/login" />} />
+        <Route path="/" element={auth.currentUser ? <AccountInfo /> : <Navigate to="login/" />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>

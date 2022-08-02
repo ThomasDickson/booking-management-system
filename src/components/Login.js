@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Navigate } from 'react-router-dom'
 import { auth } from '../firebase-config'
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { Box,
@@ -45,13 +46,11 @@ function Login() {
         display="flex"
         width={'30%'}
         >
-
         <Grid container>
           <Grid item xs={24} >
             <Typography textAlign={"center"} variant="h4" color="#2796FD">
               <b>Login </b>
             </Typography>
-
             <br /> <br />
             <br /> <br />
           </Grid>
@@ -99,7 +98,7 @@ function Login() {
                         display="flex"
                         justifyContent="center"
                     >
-                      <Button onClick={login} component={Link} to="/" size="large" variant="contained" style={{backgroundColor:"#2796FD"}}>
+                      <Button onClick={login} size="large" variant="contained" style={{backgroundColor:"#2796FD"}}>
                         Sign In
                       </Button>
                     </Grid>

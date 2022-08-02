@@ -1,20 +1,9 @@
-import React, { useState } from 'react'
-import { auth } from '../../firebase-config'
+import React from 'react'
 import '../../App.css'
 import {Grid, Button, Box, Typography, Link, Card, CardContent} from '@mui/material'
-import { Multiselect } from "multiselect-react-dropdown";
-import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
-import Login from '../Login';
-import AccountInfo from '../AccountInfo';
-import Register from '../Register'
-
-
 
 function Booking() {
   return (
-    
-
-
     <Box
       component="div"
       display="flex"
