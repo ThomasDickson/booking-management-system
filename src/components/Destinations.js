@@ -135,7 +135,6 @@ function Destinations() {
                 <Typography variant="body1">
                   Take in Japan's modern cities and culture. With a trip to Osaka flying FlyDreamAir.
                 </Typography>
-                <br />
                 <br/>
                 <Typography color="#2796FD" variant="body1">
                   <b>Flights from $1142</b>

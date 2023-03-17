@@ -1,20 +1,15 @@
-import React, { useState } from 'react'
-import { auth } from '../../firebase-config'
+import React from 'react'
 import '../../App.css'
-import {Grid, Button, Box, Typography, Link, Card, CardContent} from '@mui/material'
-import { Multiselect } from "multiselect-react-dropdown";
-import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
-import Login from '../Login';
-import AccountInfo from '../AccountInfo';
-import Register from '../Register'
+import { Grid, Button, Box, 
+         Typography, Link, 
+         Card, CardContent, 
+         ToggleButtonGroup, 
+         ToggleButton } from '@mui/material'
 
 
 
 function Booking() {
   return (
-    
-
-
     <Box
       component="div"
       display="flex"
@@ -25,32 +20,39 @@ function Booking() {
       <Box
         marginTop="30px"
         display="flex"
-        justifyContent="center"
         width={'60%'}
         >
         <Grid container>
           <Grid item xs={12} >
-            <Typography variant="h4" color="#2796FD" sx={{userSelect: "none"}}>
+            <br />
+            <Typography variant="h5" color="#2796FD" sx={{userSelect: "none"}}>
               <b>Fly with us. </b>
             </Typography>
             <Typography marginTop="12px" variant="body1" sx={{userSelect: "none"}} >
-              Select a flight here from a variety of one-way flights you can embark on!
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis velit diam, eget porttitor nulla interdum sed. Orci varius natoque penatibus et magnis dis parturient montes. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis velit diam, eget porttitor nulla interdum sed. 
             </Typography>
             <br />
-            <Typography variant="body1" as={Link} to="/">
+            <Typography variant="body1" as={Link} to="/" >
               <b>Already have a booking? Click here to manage your booking!</b>
             </Typography>
             <br/><br/>
           </Grid>
           <Grid item xs={12}>
-            <Card>
+            <Card sx={{borderRadius: "19px"}}>
               <CardContent>
                 <Grid container
                   spacing={2}>
                     <Grid item xs={12}>
-                      <Typography variant="h6" color="#2796FD">
-                        Make a flight booking
-                      </Typography>
+                      <ToggleButtonGroup 
+                        exclusive
+                      >
+                        <ToggleButton value="one-way">
+                          One Way
+                        </ToggleButton>
+                        <ToggleButton value="return">
+                          Return
+                        </ToggleButton>
+                      </ToggleButtonGroup>
                     </Grid>
                     <Grid item xs={4}>
 
